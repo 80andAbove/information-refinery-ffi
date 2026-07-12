@@ -1,0 +1,14 @@
+# Placeholder document schema for the Flutter FFI tracer bullet: a three-field
+# note (title, summary, body), mirroring information-refinery's own
+# crates/core/tests/fixtures/multi.yaml. Swap this out once the app's real
+# document shape is decided.
+fields:
+  - key: title
+    type: scalar
+    description: The headline
+  - key: summary
+    type: scalar
+    description: A short summary
+  - key: body
+    type: scalar
+    description: The main content

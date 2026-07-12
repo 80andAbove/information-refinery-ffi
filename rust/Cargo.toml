@@ -1,0 +1,14 @@
+[package]
+name = "information_refinery_ffi"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "staticlib"]
+
+[dependencies]
+# Local sibling checkout for now; swap back to the `git` form below once the
+# core API this crate depends on has landed on its default branch.
+# information-refinery-core = { git = "https://github.com/cloudultima3164/information-refinery.git" }
+information-refinery-core = { path = "../../information-refinery/crates/core" }
+flutter_rust_bridge = "=2.12.0"
